@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Template de Artigo Adaptado para Trabalho de Diplomação do ICEI %%%%%%%%%%%%%%%%%%%%%%%%
+%% codificação UTF-8 - Abntex - Latex -  							     %%
+%% Autor:    Fábio Leandro Rodrigues Cordeiro  (fabioleandro@pucminas.br)                            %% 
+%% Co-autor: Prof. João Paulo Domingos Silva, Harison da Silva e Anderson Carvalho                   %%
+%% Revisores normas NBR (Padrão PUC Minas): Helenice Rego Cunha e Prof. Theldo Cruz                  %%
+%% Versão: 1.1     18 de dezembro 2015                     	                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper,12pt,Times]{article}
+\usepackage{abakos}  %pacote com padrão da Abakos baseado no padrão da PUC
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capa da revista
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setcounter{page}{80} %iniciar contador de pagina de valor especificado
+\newcommand{\monog}{Artigo sobre Dispositivos Lógicos Programáveis}
+\newcommand{\monogES}{Article about Programmable Logic Devices}
+\newcommand{\tipo}{Artigo }  % Especificar a seção tipo do trabalho: Artigo, Resumo, Tese, Dociê etc
+\newcommand{\origem}{Brasil }
+\newcommand{\editorial}{Belo Horizonte, p. 01-7, mar. 2022}   % p. xx-xx – páginas inicial-final do artigo
+\newcommand{\lcc}{\scriptsize{Licença Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported}}
+
+%%%%%%%%%%%%%%%%%INFORMAÇÕES SOBRE AUTOR PRINCIPAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\AutorA}{Julia Veloso Dias}
+\newcommand{\funcaoA}{}
+\newcommand{\emailA}{julia.dias@pucminas.br}
+\newcommand{\cursA}{Aluno do Programa de Graduação em Ciência da Computação}
+% 
+% Definir macros para o nome da Instituição, da Faculdade, etc.
+\newcommand{\univ}{Pontifícia Universidade Católica de Minas Gerais}
+
+\newcommand{\keyword}[1]{\textsf{#1}}
+
+\begin{document}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Pagina de titulo
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\includegraphics[scale=0.2]{figuras/brasao.jpg} \\
+PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS \\
+Instituto de Ciências Exatas e de Informática
+
+% \vspace{1.0cm}
+
+\end{center}
+
+ 
+
+
+\vspace{1.0cm}
+
+\begin{flushright}
+\singlespacing 
+\normalsize{\AutorA \footnote{\funcaoA \cursA, \origem -- \emailA . }} 
+
+
+\end{flushright}
+\thispagestyle{empty}
+
+\vspace{1.0cm}
+
+\begin{abstract}
+\noindent
+O principal objetivo que hoje a computação busca é o melhor desempenho em seus programas e assim como todos os métodos computacionais, os PLDs (Programmable Logic Device) que tem sua funcionalidade para automação industrial, visam encontrar o menor custo para grandes produções e por isso é interessante aplicar a lógica programável nesse contexto, essa qual permite que qualquer circuito binacional seja descrito em uma soma com vários mintermos, estes os produtos entre as variáveis da tabela-verdade.
+O artigo procura explicar todos os termos que foram direcionados para identificação no enunciado da atividade prática, estes baseados na soma de produtos (SDP), baseado em outros artigos propostos além de um que está a escolha do aluno. 
+\\\textbf{\keyword{Palavras-chave: }} Dispositivos Lógicos Programavéis.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \newpage    %%%% CASO QUEIRA QUE O RESUMO FIQUE EM UMA PAGINA E O ABSTRACT EM OUTRA
+\selectlanguage{english}
+\begin{abstract}
+\noindent
+The main objective that computing today seeks is the best performance in its programs and, like all computational methods, PLDs (Programmable Logic Device) that have their functionality for industrial automation, aim to find the lowest cost for large productions and that is why it is It is interesting to apply programmable logic in this context, which allows any binational circuit to be described in a sum with several minterms, these being the products between the variables of the truth table.
+The article seeks to explain all the terms that were directed to identification in the practical activity statement, these based on the sum of products (SDP), based on other proposed articles in addition to one that is the student's choice.
+\\\textbf{\keyword{Keywords: }} Programmable Logic Devices.
+\end{abstract}
+
+\selectlanguage{brazilian}
+ \onehalfspace  % espaçamento 1.5 entre linhas
+ \setlength{\parindent}{1.25cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INICIO DO TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{textos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FIM DO TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \selectlanguage{brazil}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Inicio bibliografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
+
+
